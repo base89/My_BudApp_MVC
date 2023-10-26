@@ -17,5 +17,6 @@ require dirname(__DIR__) . '/vendor/autoload.php';
 $router = new Core\Router();
 
 // Add the routes
-$router->add('', ['controller' => 'Home', 'action' => 'index']);
+$router->add('', ['controller' => 'Login', 'action' => 'new']);
+$router->add('home', ['controller' => 'Home', 'action' => 'index']);
 $router->add('{controller}/{action}');
